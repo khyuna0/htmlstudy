@@ -1,0 +1,44 @@
+<html>
+    <head></head>
+    <body>
+        <table border="1" cellspacing= "0" padding="0">
+            <caption>수업 시간표</caption>
+            <thead>
+                <tr>
+                    <th>월요일</th>
+                    <!-- <th> 글씨 강조,해당 셀 텍스트 가운데 정렬 -->--
+                    <!-- ctrl + space 자동완성 단축키 --> 
+                    <td>화요일</td> 
+                    <td>수요일</td>
+                </tr>
+            </thead>
+            <!-- <thead> 제목지정 -->
+            <tbody>
+                <tr>
+                    <td colspan="2">국어</td>
+                    <!-- colspan="n" = 열 병합 -->
+                    <!-- <td>영어</td> 병합 대상 셀은 삭제 -->
+                    <td>수학</td>
+                </tr> 
+
+                <tr>
+                    <td>과학</td>
+                    <td>음악</td>
+                    <td rowspan="2">미술 2시간</td>
+                    <!-- rowspan="n" = 행 병합, n= 병합셀총개수, 
+                    텍스트 길이만큼 자동조정 -->
+                </tr>
+
+                <tr>
+                    <td>체육</td>
+                    <td>영어</td>
+                    <!-- <td>수학</td> 병합 대상 셀 삭제 -->
+                </tr>
+            </tbody>    
+            <!-- <tbody> 본문지정 / <tpoot> 요약지정 -->
+        </table>
+        
+    </body>
+
+    
+</html>

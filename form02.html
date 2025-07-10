@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- !단축키 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input form 연습</title>
+</head>
+<body>
+    <form>
+        회원이름 : <input type="hidden" name="memberName" value="서버로 전송하는 값"><br>
+        <!-- 서버로 전송, 사용자에게 보이지 않음 -->
+
+        아이디 : <input type="text" name="memberId" placeholder="guest"><br>
+        비밀번호 : <input type="password" name="memberPw"><br>
+        메모장 : <textarea rows="15" cols="10" name="memo"></textarea><br>
+        <!-- <rows>, <cols> 로 줄 단위 크기 조정 -->
+        <!-- <textarea> = 두 줄 이상 텍스트 입력 가능 -->
+
+        이메일 : <input type="text" name="email1" > @ 
+            <select name="email2" size="1" multiple>
+                <!-- size = 항목 개수 기준으로 조정 / multiple = 다중 선택 -->
+                <option value="naver">naver.com</option>
+                <option value="daum">daum.net</option>
+                <option value="gmail" selected>gmail.com</option>
+                <!-- vaule="서버로 전달될 값"/ selected 미리 선택 -->
+            </select><br>
+            
+        거주지 : <input type="text" value="서울" readonly="true"><br>
+
+        <input type="submit" value="로그인">
+        <!-- <submit> 버튼의 범위를 <form> 태그로 감싸 지정 -->
+        <!-- <value>로 내용 변경 -->
+        <input type="reset" value="취소">
+
+        <!-- input 태그 속성 정리 -->
+
+        <!-- autofocus - 자동 입력 커서 / placeholder - 힌트 표시  -->
+        <!-- readonly(="true") - 읽기 전용 필드 -->
+    </form>
+    
+</body>
+</html>

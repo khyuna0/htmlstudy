@@ -1,0 +1,47 @@
+<html>
+    <head></head>
+    <body>
+        <img src="Ing/orange.jpg" alt="레드향">
+        <!-- scr 이미지 파일 경로 / alt 이미지 대체용 텍스트/설명 -->
+        <!-- 이미지 파일 경로 - 하위 폴더 경로까지 -->
+
+        <!--  >>이미지 폴더가 상위 폴더에 있는 경우
+          ../폴더이름 ~ .. = 상위폴더
+          ex) <img src "../Ing/orange.jpg">  -->
+
+        <p><img src="Ing/orange.jpg" width="50" height="50"></p>
+        <!-- 이미지 크기 조정 width = 너비 / height =  높이 -->
+        
+        <figure>
+            <img src="Ing/orange.jpg" alt="레드향">
+            <figcaption>맛있는 레드향</figcaption>
+            <!-- <figcaption> = 설명글 추가
+                <figure> 태그 안에 <img> 태그 여러개 사용 가능 
+                    = 그림 여러장에 같은 설명 글-->
+        </figure>
+
+        <h1> 한 줄 띄어주는 태그는 &lt;br&gt; 입니다. </h1>
+        <h1> 안녕&nbsp;&nbsp;&nbsp;&nbsp;감사 </h1>
+        <h1> &copy; 카피라이트 특수문자 코드</h1>
+        <!-- &lt; / &gt; = 부등호 기호 -->
+        <!-- &nbsp; = 공백 -->
+        <!-- &copy; = 특수문자코드 -->
+
+        <hr>
+        <object width="1000" height="500" data="/Ing/product.pdf"></object>
+        <object data="Ing/orange.jpg"></object>
+
+        <embed src="media/spring.mp3">
+        <embed src="media/flight.mp4">
+        <!-- <object>,<embed> 멀티미디어 파일 삽입 -->
+        <hr>
+
+        <audio src="media/spring.mp3" controls></audio>
+        <hr>
+
+        <video width 500 ="media/flight.mp4" controls autoplay muted poster></video>
+        <!-- controls = 화면에 컨트롤 바 표시/ poster = 썸네일 기능 -->
+        <!-- autoplay = 자동재생 / loop = 반복 재생 / muted = 음소거 -->
+
+    </body>
+</html>

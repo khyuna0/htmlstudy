@@ -1,0 +1,52 @@
+<html>
+
+    <head></head>
+    <body>
+        <h1>회원 가입 양식</h1>
+        <hr>
+        <form action="result.html">
+            <label>아이디 : <input type="text" id="memberId" name="memberId" size="10"></label>
+            <!-- id = 디자인 관련 이름 / name = 서버로 가는 이름 -->
+            <br> <label>비밀번호 : <input type="password" id="memberPw" name="memberPw" size="10"></label>
+            <br> <label>이름 : <input type="text" id="memberName" name="memberName" size="10"></label>
+            <!-- input = 입력 태그 >> type 속성과 함께 사용함 -->
+            <br> <label>전화번호 : <input type="text" id="phone1" name="phone1" size="10">
+                - <input type="text" id="phone2" name="phone2" size="10">
+                - <input type="text" id="phone3" name="phone3" size="10"></label> <br>
+
+            회사전화 : <input type="tel" id="ofPhone"><br>
+            이메일 : <input type="email" id="email" size="10">
+
+            성별 :  <input type="radio" name="gender" value="male" checked>남
+            <!-- checked 고정 선택-->
+             <input type="radio" name="gender" value="female" >여
+            <!-- 같은 이름으로 radio를 묶으면 하나만 선택 가능 -->
+            <!-- value = 내용 변경 -->
+             <br>
+
+            취미 :  <input type="checkbox"name="hobby" value="movie">영화
+                    <input type="checkbox"name="hobby" value="sports">스포츠
+                    <input type="checkbox"name="hobby" value="book">독서
+                    <input type="checkbox"name="hobby" value="game">게임 <br>
+
+                <!-- radio = 1개 항목만 선택, 토글 기능 X / checkbox = 2개 이상 선택 가능 -->
+
+            보유 스마트폰 개수 : <input type="number" min="1" max="3" value="1"> <br>
+            나이 : <input type="range" min="20" max="50" step="1" value="20" name="memberAge"> <br>
+            생일 : <input type="date" name="birth"> <br>
+            태어난 시간 : <input type="datetime-local" name="birthTime"> <br>
+            예약 - 날짜 범위 제한 : <input type="date" max="2025-07-30" min="2025-07-10"> <br>
+            사진첨부 : <input type="file" value="파일 선택"> <br>
+
+
+            회원가입 : <input type="submit" value="회원가입"> 
+            <input type="reset" value="초기화"> 
+            <input type="button" value="가입취소" onclick="window.open('image1.html','_blank','width=300, height=400')">
+            <input type="image" src="Ing/login.png">
+            <!-- 이미지를 버튼으로 사용하는 방법 -->
+            <br>
+
+        </form>
+    </body>
+
+</html>
